@@ -13,24 +13,34 @@ The dataset with 1M x 4 dimensions contains columns "Sentence, Word, POS, Tag", 
 
 There are 17 labels for NER: **B-per, I-per, B-gpe, I-gpe, B-tim, I-tim, B-eve, I-eve, B-art, I-art, B-nat, I-nat, B-org, I-org, B-geo, I-geo and O (Outside tags)**.
 
->(**B**- stands for *"Beginning"* and **I**- stands for *"Inside"*)
+> (**B** stands for *"Beginning"* and **I** stands for *"Inside"*.)
 >
->**Examples:** 
+>### Examples:
 >
->for "Elton John"     
->**B-per** = Elton > **I-per** = John
+>For **"Elton John"**:  
+>- **B-per** = Elton  
+>- **I-per** = John
 >
->for "Sir Elton John"     
->**B-per** = Sir **I-per** = Elton > **I-per** = John
-
+>For **"Sir Elton John"**:  
+>- **B-per** = Sir  
+>- **I-per** = Elton  
+>- **I-per** = John
 
 They represent 8 standard named entity recognition tags as follows:
 
-**per = Person / gpe = Geopolitical Entity / tim = Time indicator** 
-<br>
-**eve = Event / art = Artifact / nat = Natural Phenomenon**
-<br>
-**org = Organization / geo = Geographical Entity**
+| **Abbreviation** | **Meaning**               |
+|------------------|---------------------------|
+| **per**          | Person                    |
+| **gpe**          | Geopolitical Entity       |
+| **tim**          | Time indicator            |
+| **eve**          | Event                     |
+| **art**          | Artifact                  |
+| **nat**          | Natural Phenomenon        |
+| **org**          | Organization              |
+| **geo**          | Geographical Entity       |
+
+## 2. Steps Overview
+
 The two steps we will perform are the following:
 
 1. **Pre-processing data.**
